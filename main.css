@@ -3,5 +3,9 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 
 .center {
     text-align: center;
-    border: 3px solid green;
+    background-color: rgb(85, 85, 85);
+    border: 1px solid rgb(150, 150, 150);
+}
+.centerP {
+    text-align: center;
 }
