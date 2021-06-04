@@ -17,15 +17,11 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 .centerText {
     text-align: center;
 }
-#projButton {
-    width: 100px;
-    height: 25px;
-    margin-bottom: 10px;
-    background-color: rgb(85, 85, 85);
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 4px;
+#tagline {
+    font-style: italic;
+}
+#link {
+    font-style: italic;
     color: white;
-    font-size: 14px;
-    text-decoration: none;
     cursor: pointer;
 }
