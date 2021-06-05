@@ -4,11 +4,11 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     position:relative;
 }
 #header {
-    width: 100vw;
+    width: 99.89vw;
     position: relative;
     margin-left: -50vw;
     margin-bottom: 25px;
-    height: 100px;
+    height: auto;
     left: 50%;
     text-align: center;
     background-color: rgb(85, 85, 85);
@@ -16,4 +16,11 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 }
 .centerText {
     text-align: center;
+}
+
+#backButton {
+    margin-right: 96.80vw;
+    font-style: italic;
+    color: white;
+    cursor: pointer;
 }
