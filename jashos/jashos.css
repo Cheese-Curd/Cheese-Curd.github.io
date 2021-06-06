@@ -1,6 +1,7 @@
 /*font*/
 a, div, h1, p { font-family: 'Roboto', sans-serif; }
 
+/* Gradient BG */
 body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
 
 #container {
