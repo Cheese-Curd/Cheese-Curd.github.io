@@ -53,5 +53,5 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 
 #taglineBold {
     font-style: italic;
-    text-decoration: bold;
+    font-weight: bold;
 }
