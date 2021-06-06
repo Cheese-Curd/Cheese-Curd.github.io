@@ -56,4 +56,4 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     font-weight: bold;
 }
 
-#smalltext {font-size: 10px;}
+#smalltext {font-size: 10px;} /* ehem github why isn't this existant? */
