@@ -65,3 +65,22 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 #link {font-weight: bold; cursor: pointer; text-decoration: underline; color: white;}
 #email {font-weight: bold; cursor: default; text-decoration: underline; color: white;}
 #bold {font-weight: bold; cursor: pointer; text-decoration: none; color: white;}
+
+#navButtons:hover {
+    font-size: 35px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+#current:hover {
+    font-size: 35px;
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+    cursor: default;
+    margin: 10px;
+}
