@@ -58,7 +58,7 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     border: 1px solid rgb(150, 150, 150);
 }
 
-#navButtons:hover {
+#navButtons:hover { /* scary hover affect 1 */
     font-size: 35px;
     color: black;
     background-color: white;
@@ -68,7 +68,7 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     text-decoration: underline;
 }
 
-#current:hover {
+#current:hover { /* scary hover affect 2 */
     font-size: 35px;
     text-decoration: underline;
     color: black;
