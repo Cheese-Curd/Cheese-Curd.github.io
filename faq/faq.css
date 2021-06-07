@@ -1,20 +1,12 @@
 /*font*/
 a, div, h1, p { font-family: 'Roboto', sans-serif; }
 
-/* Gradient BG */
-body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
-
 #container {
     position:relative;
 }
 
-#tagline {
-    font-style: italic;
-}
-#link {font-weight: bold; cursor: pointer; text-decoration: underline; color: white;}
-
 #header {
-    width: 99.4vw;
+    width: 99.89vw;
     position: relative;
     margin-left: -50vw;
     margin-bottom: 25px;
@@ -22,8 +14,8 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
     height: auto;
     left: 50%;
     text-align: center;
-    background-color: rgb(138, 0, 0);
-    border: 1px solid rgb(182, 0, 70);
+    background-color: rgb(85, 85, 85);
+    border: 1px solid rgb(150, 150, 150);
 }
 
 .centerText {
@@ -41,8 +33,8 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
 
 #nav {
     overflow: hidden;
-    background-color: rgba(141, 0, 59, 0.514);
-    border: 1px solid rgba(165, 0, 41, 0.514);
+    background-color: rgb(0, 0, 0, 0.514);
+    border: 1px solid rgb(32, 32, 32, 0.514);
     position: fixed;
     margin-left: -0.5vw;
     top: 0;
@@ -56,3 +48,20 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
     cursor: default;
     margin: 10px;
 }
+
+#tagline {
+    font-style: italic;
+}
+
+#taglineBold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#smalltext {font-size: 10px;} /* ehem github why isn't this existant? */
+
+#crossout {text-decoration: line-through;}
+
+#link {font-weight: bold; cursor: pointer; text-decoration: underline; color: white;}
+#email {font-weight: bold; cursor: default; text-decoration: underline; color: white;}
+#bold {font-weight: bold; cursor: pointer; text-decoration: none; color: white;}
