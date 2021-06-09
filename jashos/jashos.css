@@ -31,7 +31,7 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
     margin-top: 100px;
 }
 
-#navButtons {
+.navButtons {
     font-size: 35px;
     color: white;
     cursor: pointer;
@@ -39,7 +39,7 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
     margin: 10px;
 }
 
-#navButtons:hover {
+.navButtons:hover {
     font-size: 35px;
     color: black;
     background-color: white;
