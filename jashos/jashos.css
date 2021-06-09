@@ -50,6 +50,7 @@ body { background-image: linear-gradient(0deg, #0E24F1, #7a0006); }
 }
 
 #nav {
+    z-index: 3000;
     overflow: hidden;
     background-color: rgba(141, 0, 59, 0.514);
     border: 1px solid rgba(165, 0, 41, 0.514);
