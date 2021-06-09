@@ -76,3 +76,5 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     cursor: default;
     margin: 10px;
 }
+
+#link {font-weight: bold; cursor: pointer; text-decoration: underline; color: white;}
