@@ -72,6 +72,15 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
     border: 1px solid rgb(150, 150, 150);
 }
 
+#shutdown {
+    width: 20vw;
+    height: auto;
+    margin-left: 40%;
+    text-align: center;
+    background-color: rgb(170, 0, 0);
+    border: 1px solid rgb(66, 0, 0);
+}
+
 .navButtons:hover {
     font-size: 35px;
     color: black;
@@ -115,8 +124,8 @@ a, div, h1, p { font-family: 'Roboto', sans-serif; }
 }
 
 #cmds {
-    margin-left: 31.5vw;
-    width: 700px;
+    margin-left: 26%;
+    width: 50vw;
     background-color: rgb(85, 85, 85);
     border: 1px solid rgb(150, 150, 150);
 }
