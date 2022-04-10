@@ -1,34 +1,55 @@
+<!-- Oh, hi. If you're reading this, my name is Angel Bot. Cheese Curd gave me a reference image to work off of to make this site. I'm going off of this if you're curious. -->
+<!-- https://cdn.discordapp.com/attachments/646105105044602880/962496071521689661/Site_New_Look_-_Main.pdn -->
+<!-- Angel got the basics (title fading in and out and background) and I sto- I mean coded the rest -->
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cheese Curd's Stuff - Welcome</title>
-        <link rel="icon" href="favicon.png">
+	<head>
+		<title>Cheese Curd's Stuff : Main</title>
+		<link rel="icon" href="favicon.ico">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body bgcolor="#2b2b2b" text="white">
-        <div id="container">
-            <div id="nav">
-                <div>
-                    <a id="current">Home</a>
-                    <a id="navButtons" href="./jashos/">JashOS</a>
-                    <a id="navButtons" href="./scb/">SCB</a>
-                    <a id="navButtons" href="./faq">FAQ</a>
-                    <a id="navButtons" href="./aboutme/">About Me</a>
-                    <a class="skip-to-content-link" href="./secret/">Secret Page...</a>
-                </div>
-            </div>
-            <div id="header">
-                <h1>Cheese Curd's stuff</h1>
-                <div id="tagline">You don't need it?</div>
-                <div id="taglineBold">I probably got it lol</div>
-            </div>
-            <div class="centerText">
-                Welcome to my stuff! I shove a lot of things that I wanna do here <br>
-                To be honest with you, I don't think anyone would unironically use my stuff! <i id="smalltext">unless it's SCB</i><br><br>
-            </div>
-        </div>
-    </body>
+		<link rel="stylesheet" href="./Styles/theme/dark.css" id="theme">
+		<link rel="stylesheet" href="./Styles/site.css">
+		<script src="site.js"></script>
+	</head>
+	<body class="column">
+		<nav style="display: flex; flex-direction: row;">
+			<a class="navBtn" href="/">Main</a>
+			<a class="navBtn" href="./about-me">About Me</a>
+			<a class="navBtn" href="./projects">Projects</a>
+			<a class="navBtn" style="margin-right: 10px; margin-left: auto;" href="javascript:toggleTheme()">Toggle Theme</a>
+		</nav>
+		<div id="welcome">Welcome</div>
+		<div id="title">Cheese Curd's Stuff</div>
+		<div id="content">
+			<div>Hey! This site is not finished. Please try to view this site again later!</div>
+		</div>
+		<script> /* Script only for the home page */
+			document.addEventListener('DOMContentLoaded', () =>
+			{
+				const welcome = document.querySelector('#welcome');
+				const stuff = document.querySelector('#title');
+				const content = document.querySelector('#content');
+				const navBtn = document.querySelectorAll('.navBtn');
+				requestAnimationFrame(() =>
+				{
+					welcome.style.top = '96px';
+					setTimeout(() =>
+					{
+						welcome.style.top = '224px';
+						welcome.style.opacity = '0';
+						setTimeout(() =>
+						{
+							welcome.remove();
+							stuff.style.opacity = '1';
+							setTimeout(() =>
+							{
+								content.style.opacity = '1';
+							}, 300);
+						}, 1000);
+					}, 2000);
+				});
+			}, { "once":true });
+		</script>
+	</body>
 </html>

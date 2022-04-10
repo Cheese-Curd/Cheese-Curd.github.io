@@ -1,0 +1,52 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* Universal */
+body { margin: 0; width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: 100% 100%; overflow: hidden; background: var(--background); }
+a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color: var(--textColor); }
+.column { display: flex; flex-direction: column; }
+.row { display: flex; flex-direction: row; }
+
+.button {
+    background-color: var(--btnBackground);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    outline: var(--btnOutline);
+    outline-style: solid;
+    color: var(--btnColor);
+}
+
+.navBtn {
+    background-color: var(--btnBackground);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: var(--btnColor);
+    font-size: large;
+}
+
+#content {
+    font-size: 16px;
+    opacity: 0;
+    padding-inline: 15px;
+    margin: 25px auto 0;
+    transition: opacity 0.5s linear;
+}
+
+/* Welcome */
+#welcome { font-size: 72px; left: 0; right: 0; top: -64px; position: absolute; text-align: center; transition: opacity 0.5s linear, top 0.75s cubic-bezier(0,1,1,1); }
+#title { font-size: 72px; text-decoration: underline; opacity: 0; margin: 55px auto 0; transition: opacity 0.5s linear; }

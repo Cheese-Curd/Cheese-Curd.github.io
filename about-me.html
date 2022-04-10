@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cheese Curd's Stuff : About Me</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="./Styles/theme/dark.css" id="theme">
+		<link rel="stylesheet" href="./Styles/site.css">
+		<script src="site.js"></script>
+	</head>
+	<body class="column">
+		<nav style="display: flex; flex-direction: row;">
+			<a class="navBtn" href="/">Main</a>
+			<a class="navBtn" href="./about-me">About Me</a>
+			<a class="navBtn" href="./projects">Projects</a>
+			<a class="navBtn" style="margin-right: 10px; margin-left: auto;" href="javascript:toggleTheme()">Toggle Theme</a>
+		</nav>
+        <div id="title">About Me</div>
+        <div id="content">
+			<div>Hey! This site is not finished. Please try to view this site again later!</div>
+		</div>
+        <script> /* Title Fade in */
+			document.addEventListener('DOMContentLoaded', () =>
+			{
+				const title = document.querySelector('#title');
+				const content = document.querySelector('#content');
+				requestAnimationFrame(() =>
+				{
+                    setTimeout(() =>
+                    {
+                        title.style.opacity = '1';
+                        content.style.opacity = '1';
+                        setTimeout(() =>
+                        {
+                            content.style.opacity = '1';
+                        }, 300);
+                    }, 300);
+				});
+			}, { "once":true });
+		</script>
+	</body>
+</html>
