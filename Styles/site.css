@@ -45,6 +45,28 @@ a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color
     padding-inline: 15px;
     margin: 25px auto 0;
     transition: opacity 0.5s linear;
+    text-align: center;
+}
+
+.codeBlock {
+    background: var(--btnBackground);
+    border-radius: 6px;
+    padding: 2px;
+    font-weight: 600;
+    margin: auto;
+    color: var(--btnColor);
+    font-family: monospace;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* totally not stolen from Angel */
+#warning {
+    margin: auto auto 0; padding-top: 24px;
 }
 
 /* Welcome */
