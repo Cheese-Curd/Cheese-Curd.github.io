@@ -1,6 +1,7 @@
 :root
 {
 	--background: linear-gradient(180deg, #404040 0%, #202020 10%, #1E1E1E 11%);
+    --forground: #FFFFFF10;
     --btnBackground: #575757;
     --btnOutline: #838383;
     --btnColor: #ffffff;

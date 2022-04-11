@@ -62,6 +62,9 @@ a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color
     display: flex;
     flex-direction: column;
     margin: 10px;
+    padding: 6px;
+    background: var(--forground);
+    border-radius: 8px;
 }
 
 /* totally not stolen from Angel */
