@@ -68,9 +68,7 @@ a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color
 }
 
 /* totally not stolen from Angel */
-#copyright {
-    margin: auto auto 0; padding-top: 24px;
-} /* the */
+#copyright { margin: auto auto 0; padding-top: 24px; }
 
 /* Welcome */
 #welcome { font-size: 72px; left: 0; right: 0; top: -64px; position: absolute; text-align: center; transition: opacity 0.5s linear, top 0.75s cubic-bezier(0,1,1,1); }
