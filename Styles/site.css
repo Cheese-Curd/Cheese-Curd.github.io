@@ -73,3 +73,13 @@ a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color
 /* Welcome */
 #welcome { font-size: 72px; left: 0; right: 0; top: -64px; position: absolute; text-align: center; transition: opacity 0.5s linear, top 0.75s cubic-bezier(0,1,1,1); }
 #title { font-size: 72px; text-decoration: underline; opacity: 0; margin: 55px auto 0; transition: opacity 0.5s linear; }
+
+/* About - Thanks Angel for the design <3 */
+#bio-description {
+    width: 80vw;
+    display: BLOCK;
+    background: var(--btnBackground);
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 1px 8px 2px #00000080;
+}
