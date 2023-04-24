@@ -1,3 +1,6 @@
+- Info -
+Chromebooks are weird, MFM literally has a top bar at the top and won't load. (The whole purpose of this site... gone...)
+
 - Legal stuff, probably -
 
 I do not own *ANY* of the mods listed below. All assets are from their respective authors.
