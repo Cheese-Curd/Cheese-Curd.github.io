@@ -6,6 +6,8 @@ Chromebooks are weird, MFM literally has a top bar at the top and won't load. (T
 I do not own *ANY* of the mods listed below. All assets are from their respective authors.
 
 - The Mods™ -
+Doki Doki Takeover Plus (I am so smart lmao, I'm surprised I got this to work)
+	https://github.com/Jorge-SunSpirit/Doki-Doki-Takeover
 MFM
 	https://github.com/toastergoldie/midfightmasses/tree/main
 Smoke 'Em Out Struggle
