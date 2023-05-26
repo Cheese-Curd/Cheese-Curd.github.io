@@ -2,6 +2,8 @@ var main = document.getElementById("content"); // Has to be var to change it eve
 
 var iconPath = "icons/";
 
+document.getElementById("headerTitle").innerText = document.title;
+
 function setPath(iPath) { iconPath = iPath; }
 
 function createBack() {
