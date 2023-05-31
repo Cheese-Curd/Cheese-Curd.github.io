@@ -2,9 +2,12 @@ var main = document.getElementById("content"); // Has to be var to change it eve
 
 var iconPath = "icons/";
 
+document.getElementById("headerTitle").innerText = document.title;
+
 function setPath(iPath) { iconPath = iPath; }
 
-function createBack() {
+function createBack()
+{
 	// Item
 	var item = document.createElement("a");
 	item.className = "item";
@@ -25,7 +28,8 @@ function createBack() {
 	main.appendChild(document.createComment(" Start of Items ")) // Quick comment :3
 }
 
-function getData(URL) {
+function getData(path = '') // I hate HTTP requests
+{
 	/*
 	  I know this is deprecated! (https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests#synchronous_request)
   
@@ -33,31 +37,30 @@ function getData(URL) {
 	*/
 
 	const request = new XMLHttpRequest();
-	request.open("GET", URL, false);
+	request.open("GET", "https://api.github.com/repos/Cheese-Curd/Cheese-Curd.github.io/contents/secret/" + path, false); // most recent data
 	request.send(null);
 	if (request.status === 200)
-		return JSON.parse(request.responseText);
-	else
-		return false;
+		return JSON.parse(request.responseText); // Return final json
+	return false;
 }
 
-function createItems(dataURL) {
-	var data = getData(dataURL);
-	if (data == false) { return false }
-	data = data.tree; // I only need the tree
+function createItems(path)
+{
+	var data = getData(path);
+	if (data == false) return false;
 
-	for (var itemData of data) {
+	for (var itemData of data)
+	{
 		var itemIcon = undefined;
-		if (itemData.type == "tree")
+		if (itemData.type == "dir")
 			itemIcon = "folder";
 		else
 			itemIcon = "file"; // It's a file, but what type?
-			
+
 		if (itemIcon == "file")
 		{
-			const split = itemData.path.split('.');
-			switch (split[split.length-1].toLowerCase())
-			{
+			const split = itemData.name.split('.');
+			switch (split[split.length - 1].toLowerCase()) {
 				case "mp3": // all audio ._.
 				case "ogg":
 				case "oga":
@@ -66,7 +69,7 @@ function createItems(dataURL) {
 				case "flac":
 				case "mp3":
 					itemIcon = "audio";
-				break;
+					break;
 
 				case "mp4":
 				case "webm":
@@ -102,11 +105,12 @@ function createItems(dataURL) {
 			}
 		}
 
-		createItem(itemIcon, itemData.path)
+		createItem(itemIcon, itemData.name)
 	}
 }
 
-function createItem(iconType, title) {
+function createItem(iconType, title)
+{
 	var item = document.createElement("a");
 	item.className = "item"
 	var icon = document.createElement("img");
