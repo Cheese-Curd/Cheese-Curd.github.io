@@ -46,6 +46,7 @@ a, div, span { font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; color
     margin: 25px auto 0;
     transition: opacity 0.5s linear;
     text-align: center;
+    overflow: auto;
 }
 
 .codeBlock {
