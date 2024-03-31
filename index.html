@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="./Styles/site.css">
 		<script src="site.js"></script>
 	</head>
-	<body class="column">
+	<body class="column" onload="siteLoaded()">
 		<nav style="display: flex; flex-direction: row;">
 			<a class="navBtn" href="/">Main</a>
 			<a class="navBtn" href="./about-me">About Me</a>
@@ -27,7 +27,7 @@
 			<div id="uquiz_embed" data-quiz-id="Zt3Uib" data-width="100%"></div>
 			<script src="https://uquiz.com/embed.js"></script>
 		</div>
-		<div id="copyright">Copyright © 2024 cheese-curd.github.io - All Rights Reserved. <a href="/LICENSE.md">License</a></div>
+		<div id="copyright"><a href="/LICENSE.md">License</a></div>
 		<script> /* Script only for the home page */
 			document.addEventListener('DOMContentLoaded', () =>
 			{

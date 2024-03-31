@@ -51,3 +51,14 @@ function getCookie(name)
     }
     return null;
 }
+
+function siteLoaded()
+{
+	// Copyright stuff
+	var licenseLink = document.createElement("a");
+	licenseLink.innerText = "License";
+	licenseLink.href = "/LICENSE.md";
+	var copyrightDiv = document.getElementById("copyright");
+	copyrightDiv.innerText = `Copyright © ${new Date().getFullYear()} cheese-curd.github.io - All Rights Reserved. `;
+	copyrightDiv.appendChild(licenseLink);
+}
