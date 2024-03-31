@@ -19,6 +19,7 @@
         <div id="content" style="display: flex; flex-direction: row;">
             <div class="project">
                 <span style="font-size: x-large;" class="codeBlock">Sad Chill Bot</span>
+				<div id="desc0"></div>
                 <br><br>
                 <div>
                     <span class="codeBlock">Link:</span>
@@ -26,19 +27,21 @@
                 </div>
             </div>
             <div class="project">
-                <span style="font-size: x-large;" class="codeBlock">JashOS</span>
+                <span style="font-size: x-large;" class="codeBlock">Electric</span>
+				<div id="desc1"></div>
                 <br><br>
                 <div>
                     <span class="codeBlock">Link:</span>
-                    <span>[Private]</span>
+                    <span><a href="https://github.com/cheese-curd/electric">Click Here.</a></span>
                 </div>
             </div>
             <div class="project">
-                <span style="font-size: x-large;" class="codeBlock">Plants Vs Zombies: Haxe Edition</span>
+                <span style="font-size: x-large;" class="codeBlock">Old Python Console</span>
+				<div id="desc2"></div>
                 <br><br>
                 <div>
                     <span class="codeBlock">Link:</span>
-                    <span><a href="https://github.com/Cheese-Curd/PlantsVSZombiesHaxe">Click Here.</a></span>
+                    <span><a href="https://github.com/Cheese-Curd/old-python-console">Click Here.</a></span>
                 </div>
             </div>
             
@@ -61,6 +64,53 @@
                     }, 300);
 				});
 			}, { "once":true });
+			
+			// Repo descriptions
+
+			function getRepoDesc(repoName)
+			{
+				return fetch(`https://api.github.com/repos/cheese-curd/${repoName}`)
+					.then(response => {
+						if (!response.ok)
+							throw new Error('Network response was not ok');
+						return response.json();
+					})
+					.then(data => {
+						return data.description;
+					})
+					.catch(error => {
+						console.error('There was a problem with the fetch operation:', error);
+					});
+			}
+
+			document.getElementById('desc0').innerText = "Getting Description....";
+			document.getElementById('desc1').innerText = "Getting Description....";
+			document.getElementById('desc2').innerText = "Getting Description....";
+			getRepoDesc("sad-chill-bot")
+			.then(description => {
+				document.getElementById('desc0').textContent = description;
+			})
+			.catch(error => {
+				document.getElementById('desc0').textContent = "Error getting description.";
+				console.error('Error fetching repository description:', error);
+			});
+			getRepoDesc("electric")
+			.then(description => {
+				document.getElementById('desc1').textContent = description;
+			})
+			.catch(error => {
+				document.getElementById('desc1').textContent = "Error getting description.";
+				console.error('Error fetching repository description:', error);
+			});
+			getRepoDesc("old-python-console")
+			.then(description => {
+				document.getElementById('desc2').textContent = description;
+			})
+			.catch(error => {
+				document.getElementById('desc2').textContent = "Error getting description.";
+				console.error('Error fetching repository description:', error);
+			});
+
 		</script>
 	</body>
 </html>
